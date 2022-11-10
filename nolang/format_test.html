@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image formats test</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="/styles/style_basic.css">
+    </head>
+    <body>
+        <p><button onclick="history.back()">Back</button></p>
+        <p>Default is PNG.</p>
+        <button onclick="set_format('jpeg90')">JPEG 90% quality</button>
+        <button onclick="set_format('jpeg95')">JPEG 95% quality</button>
+        <button onclick="set_format('webplossless')">WEBP lossless</button>
+        <button onclick="set_format('webplossy')">WEBP lossy</button>
+        <button onclick="set_format('png')">PNG</button>
+        <button onclick="set_format('jpegxllossless')">JPEG-XL lossless</button>
+        <button onclick="set_format('jpegxllossy')">JPEG-XL lossy</button><br>
+        <img id="miku" src="/res/img_format_test/miku.png" width="300">
+        <script>
+            function set_format(format) {
+                switch (format){
+                    case "jpeg90":
+                    document.getElementById("miku").src="/res/img_format_test/miku_90.jpg";
+                    break;
+                    case "jpeg95":
+                    document.getElementById("miku").src="/res/img_format_test/miku_95.jpg";
+                    break;
+                    case "png":
+                    document.getElementById("miku").src="/res/img_format_test/miku.png";
+                    break;
+                    case "webplossless":
+                    document.getElementById("miku").src="/res/img_format_test/miku_lossless.webp";
+                    break;
+                    case "webplossy":
+                    document.getElementById("miku").src="/res/img_format_test/miku_lossy.webp";
+                    break;
+                    case "jpegxllossless":
+                    document.getElementById("miku").src="/res/img_format_test/miku_lossless.jxl";
+                    break;
+                    case "jpegxllossy":
+                    document.getElementById("miku").src="/res/img_format_test/miku_lossy.jxl";
+                    break;
+                }
+            }
+        </script>
+    </body>
+</html>
