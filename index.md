@@ -1,8 +1,8 @@
 # vcprocles' stuff
 
-<!-- [Гэтая старонка таксама даступная на беларускай](README_be.md) -->
+<!-- [Гэтая старонка таксама даступная на беларускай](index_be.md) -->
 
-[Эта страница также доступна на русском](README_ru.md)
+[Эта страница также доступна на русском](index_ru.md)
 
 ## [Basically this page, but in form of a Telegram channel](https://t.me/kutocak)
 
