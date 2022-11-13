@@ -1,9 +1,25 @@
-<!DOCTYPE html>
-<html>
+    <!DOCTYPE html>
+    <html>
     <head>
         <title>Image formats test</title>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="/styles/style_basic.css">
+        <style>
+            h1 {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            h2{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            p {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            body, html {
+                margin-left:1%;
+                margin-right:1%;
+                margin-bottom:1%;
+                margin-top:1%;
+            }
+        </style>
     </head>
     <body>
         <p><button onclick="history.back()">Back</button></p>
@@ -15,33 +31,33 @@
         <button onclick="set_format('png')">PNG</button>
         <button onclick="set_format('jpegxllossless')">JPEG-XL lossless</button>
         <button onclick="set_format('jpegxllossy')">JPEG-XL lossy</button><br>
-        <img id="miku" src="/res/img_format_test/miku.png" width="300">
+        <img id="miku" src="res/miku.png" alt="Miku picture" width="300">
         <script>
             function set_format(format) {
                 switch (format){
                     case "jpeg90":
-                    document.getElementById("miku").src="/res/img_format_test/miku_90.jpg";
+                    document.getElementById("miku").src="res/miku_90.jpg";
                     break;
                     case "jpeg95":
-                    document.getElementById("miku").src="/res/img_format_test/miku_95.jpg";
+                    document.getElementById("miku").src="res/miku_95.jpg";
                     break;
                     case "png":
-                    document.getElementById("miku").src="/res/img_format_test/miku.png";
+                    document.getElementById("miku").src="res/miku.png";
                     break;
                     case "webplossless":
-                    document.getElementById("miku").src="/res/img_format_test/miku_lossless.webp";
+                    document.getElementById("miku").src="res/miku_lossless.webp";
                     break;
                     case "webplossy":
-                    document.getElementById("miku").src="/res/img_format_test/miku_lossy.webp";
+                    document.getElementById("miku").src="res/miku_lossy.webp";
                     break;
                     case "jpegxllossless":
-                    document.getElementById("miku").src="/res/img_format_test/miku_lossless.jxl";
+                    document.getElementById("miku").src="res/miku_lossless.jxl";
                     break;
                     case "jpegxllossy":
-                    document.getElementById("miku").src="/res/img_format_test/miku_lossy.jxl";
+                    document.getElementById("miku").src="res/miku_lossy.jxl";
                     break;
                 }
             }
         </script>
     </body>
-</html>
+    </html>

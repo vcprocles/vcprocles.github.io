@@ -1,0 +1,5 @@
+theme: jekyll-theme-minimal
+minima:
+  skin: solarized
+header_pages:
+  - README.md
