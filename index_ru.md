@@ -1,8 +1,8 @@
 # Стафф Проклеса
 
-<!-- [Гэтая старонка таксама даступная на беларускай](README_be.md) -->
+<!-- [Гэтая старонка таксама даступная на беларускай](index_be.md) -->
 
-[This page is also available in English](README.md)
+[This page is also available in English](index.md)
 
 ## [По сути эта страница, но в виде тг-канала](https://t.me/kutocak)
 
